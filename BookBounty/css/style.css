@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+root {
+    --main-bg-color: rgb(32, 33, 37);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+/* BACKGROUND */
+body {
+    background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(38, 38, 39) 33%, rgb(131, 131, 131) 66%, rgb(0, 0, 0) 100%);
+    background-size: 100000px 100%;
+    animation: bg 30s linear infinite
+}
+
+@keyframes bg {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100000px;
+    }
+}
+/*  */
+
+
+
+/* NAVBAR */
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: linear-gradient(275deg, rgb(131, 131, 131), rgb(38, 38, 39), rgb(0, 0, 0)); 
+    font-family: 'Lato', sans-serif;
+    z-index: 10000;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: 270px;
+    padding: 0 25px;
+}
+
+nav ul {
+    height: 9vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+    color: #cae962;
+}
+
+.home {
+    position: fixed;
+    right: 0;
+    max-height: 70px;
+}
+
+.log {
+    box-sizing: border-box;
+    background-color: #cae962;
+    color: var(--main-bg-color);
+    padding: 8px 8px;
+}
+
+.log:hover {
+    color: var(--main-bg-color);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    font-family: 'Lato', sans-serif;
+    width: 30vw;
+    height: 34px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+    font-weight: 900;
+}
+
+.search button {
+    height: 33px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.search button:hover {
+    background-color: white;
+    color: black;
+}
+
+/*  */
+
+
+
+/* CONTAINER */
+
+
+.card {
+    max-width: 91vw;
+    margin: 37px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cards {
+    display: flex;
+    overflow: auto;
+}
+
+.cards a {
+    text-decoration: none;
+}
+
+.card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.card h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    color: #cae962;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+footer {
+    height: 12vh;
+    background: linear-gradient(135deg, rgb(131, 131, 131), rgb(38, 38, 39), rgb(0, 0, 0));
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.card img {
+    margin-top: 20px;
+    height: 200px;
+    width: 160px;
+    object-fit: cover;
+}
+
+.card img:hover {
+    box-shadow: 0px 0px 19px 6px rgb(99, 98, 98);
+}
+
+.card a {
+    max-width: 160px;
+}
+
+.card a:hover {
+    box-shadow: 0px 0px 19px 6px #cae962;
+}
+
+.lines p {
+    color: #cae962;
+    text-align: center;
+    text-decoration: none;
+}
+
+.lines p:hover {
+    font-weight: bolder;
+}
+
+/*  */

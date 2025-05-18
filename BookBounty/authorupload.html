@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="css/favicon.ico">
+    <link rel="stylesheet" href="css/authorupload.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="homeBtn">
+        <a href="authorhome.php" class="hbtn"><i class="fas fa-home"></i></a>
+    </div>
+
+    <div class="container">
+        <div class="center">
+            <div class="form">
+                <div class="title">UPLOAD</div>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <div class="input-box">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Name of book" name="Name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fas fa-envelope"></i>
+                        <textarea class="des" placeholder="Description of Book" name="Description" required></textarea>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="book_thumbnail">Thumbnail of Book :</label>
+                        <label for="book_thumbnail" class="thumbnail">choose file</label>
+                        <input type="file" class="thumb" placeholder="Thumbnail of Book" id="book_thumbnail" name="book_thumbnail" accept="image/*" required>
+                    </div>
+
+                    <div class="choice">
+                        <div class="genre-label">
+                            <label>Genre of Book :</label>
+                        </div>
+                        <div class="genre-options">
+                            <input type="radio" id="genre_fiction" name="genre" value="Fiction" required>
+                            <label class="fiction" for="genre_fiction">Fiction</label>
+                            <input type="radio" id="genre_nonfiction" name="genre" value="Non-Fiction">
+                            <label for="genre_nonfiction">Non-Fiction</label>
+                            <input type="radio" id="genre_mystery" name="genre" value="Mystery">
+                            <label for="genre_mystery">Mystery</label>
+                            <input type="radio" id="genre_manga" name="genre" value="Manga">
+                            <label for="genre_manga">Manga</label>
+                            <input type="radio" id="genre_horror" name="genre" value="Horror">
+                            <label for="genre_horror">Horror</label>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="book_pdf">Upload PDF :</label>
+                        <label for="book_pdf" class="thumbnail">Choose file</label>
+                        <input type="file" class="thumb" id="book_pdf" name="book_pdf" accept=".pdf" required>
+                    </div>
+
+                    <input type="submit" value="Upload Book">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&display=swap');
+.dash {
+    position: relative;
+    top: 23%;
+    height: 50vh;
+    width: 80vw;
+    background: none;
+    margin: 5px 30px;
+    margin-left: 10vw;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dash .box {
+    width: calc(50% - 60px);
+    height: 33vh;
+    box-sizing: border-box;
+    margin: 30px;
+    box-shadow: 0px 0px 1px 1px #000000;
+    border-radius: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+}
+
+.dash .box:hover {
+    width: calc(50% - 60px);
+    height: 33vh;
+    box-sizing: border-box;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px #cae962;
+}
+
+.dash .box a .link {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash .link img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 20px;
+    opacity: .2;
+}
+
+.dash .box .link .pos1 {
+    position: absolute;
+    text-decoration: none;
+    color: #cae962;
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+/* .dash .link .pos2 {
+    position: absolute;
+    text-decoration: none;
+    color: #cae962;
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.dash .link .pos3 {
+    position: absolute;
+    text-decoration: none;
+    color: #cae962;
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.dash .link .pos4 {
+    position: absolute;
+    text-decoration: none;
+    color: #cae962;
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+} */

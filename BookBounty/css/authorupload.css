@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+root {
+    --main-bg-color: rgb(32, 33, 37);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(38, 38, 39) 33%, rgb(131, 131, 131) 66%, rgb(0, 0, 0) 100%);
+    background-size: 100000px 100%;
+    animation: bg 15s linear infinite
+}
+
+@keyframes bg {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100000px;
+    }
+}
+
+.homeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255, .4);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 5%;
+    left: 3%;
+    z-index: 1000;
+}
+
+.homeBtn:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.homeBtn .hbtn {
+    font-size: 30px;
+    color: #cae962;
+}
+
+.homeBtn .hbtn:hover {
+    font-size: 32px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Container styles */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Center content */
+
+.center {
+    height: 80vh;
+    overflow-y: auto;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.center::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Form styles */
+
+.form {
+    text-align: center;
+}
+
+.form .title {
+    position: relative;
+    font-size: 50px;
+    font-weight: 500;
+    color: #cae962;
+}
+
+
+.form .choice .genre-options .fiction{
+    margin-left: 140px;
+}
+
+/* Input box styles */
+
+.input-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-box input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.form .input-box input:focus,
+.form .input-box input:valid {
+    border-color: #cae962;
+}
+
+
+/* Description input styles */
+
+.input-box textarea {
+    width: calc(100% - 40px);
+    height: 100px;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    transition: all 0.3s ease;
+    overflow: auto;
+}
+
+.input-box textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.input-box textarea:focus,
+.input-box textarea:valid {
+    border-color: #cae962;
+}
+
+
+/* Thumbnail and PDF file input styles */
+
+.input-box input[type="file"].thumb {
+    display: none;
+    /* Hide the default file input button */
+}
+
+.thumbnail {
+    width: calc(100% - 40px);
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, rgb(131, 131, 131), rgb(38, 38, 39), rgb(0, 0, 0));
+    color: #cae962;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+/* Hover effect */
+
+.thumbnail:hover {
+    background: linear-gradient(135deg,rgb(0, 0, 0), rgb(38, 38, 39), rgb(131, 131, 131) );
+}
+
+
+/* Genre radio button styles */
+
+.choice {
+    margin-bottom: 20px;
+}
+
+.choice .genre-label {
+    margin-bottom: 10px;
+    /* Add space between the first label and options */
+}
+
+.choice .genre-options {
+    display: flex;
+    flex-direction: row;
+    /* Display items in a row */
+}
+
+.choice .genre-options label {
+    margin-right: 10px;
+    /* Add space between each option */
+}
+
+.choice input[type="radio"] {
+    display: none;
+}
+
+.choice input[type="radio"]+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    margin-left: 20px;
+}
+
+.choice input[type="radio"]:checked+label {
+    background-color: #cae962;
+    color: #000000;
+}
+
+
+/* Submit button styles */
+
+input[type="submit"] {
+    margin-top: 100px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #cae962;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #000000;
+    color: #cae962;
+}

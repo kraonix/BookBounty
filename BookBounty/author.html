@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form For Authors</title>
+  <link rel="icon" type="image/x-icon" href="css/favicon.ico">
+  <link rel="stylesheet" href="css/author.css">
+  <link rel="stylesheet" href="login/rain.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script src="login/login.js" defer></script>
+
+
+</head>
+<body>
+
+  <div class="homeBtn">
+    <a href="front.php" class="hbtn"><i class="fas fa-home"></i></a>
+  </div>
+
+  <div id="leaf-container">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+
+  <div class="wrapper">
+    <form action="author.php" onsubmit="return isvalid()" method="post">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" name="Aname" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" name="Apassword" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <button type="submit" class="btn" name="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
